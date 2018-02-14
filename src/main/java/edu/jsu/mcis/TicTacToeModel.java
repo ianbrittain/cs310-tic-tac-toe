@@ -38,7 +38,7 @@ public class TicTacToeModel{
         private String message;
         
         private Result(String msg) {
-            message = msg;
+            message = msg.trim();
         }
         
         @Override
