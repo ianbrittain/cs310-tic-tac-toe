@@ -48,18 +48,23 @@ public class TicTacToeView extends JPanel implements ActionListener{
 		String button = ((JButton) e.getSource()).getName();
 
 		int row = (int) button.charAt(6) - 48, col = (int) button.charAt(7) - 48;
-		
+				
 		model.makeMark(row, col);
 		
-		JButton clicked = (JButton)e.getSource();
 		
-		clicked.setText(model.getMark(row, col).toString());
+	
+		JButton clicked = (JButton)e.getSource();
+		clicked.setText(model.getMark(row, col).toString());			
+							
 		
 		if(model.getResult() != TicTacToeModel.Result.NONE){
-				
-			resultLabel.setText(model.getResult().toString());			
-
-			}
+			resultLabel.setText(model.getResult().toString());		
+		
+		}
+					
+			
+			
+		
 		
 	}    
 	
