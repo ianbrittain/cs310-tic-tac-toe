@@ -57,8 +57,7 @@ public class TicTacToeView extends JPanel implements ActionListener{
 		
 		if(model.getResult() != TicTacToeModel.Result.NONE){
 				
-			resultLabel.setText(model.getResult().toString());
-			
+			resultLabel.setText(model.getResult().toString());			
 
 			}
 		
